@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejemplo de estilos CSS en el propio documento</title>
+<!--Método 1
+
+<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+
+<!--Método 2
+
+<style type="text/css">
+  p { color: blue; font-family: Verdana;}
+  h1, h2, h3, h4, h5, h6  { font-family: Verdana;}
+  h1 { color: green}
+</style>
+-->
+<!--Método 3
+-->
+<style type="text/css" media="screen">
+  @import "css/estilos.css";
+</style>
+
+</head>
+
+<body>
+<h1 class="noimprimir">Ejemplo 1 CSS</h1>
+<h2>Ejemplo 2 CSS</h2>
+<h3>Ejemplo 3 CSS</h3>
+<p>Un párrafo de texto.</p>
+</body>
+</html>

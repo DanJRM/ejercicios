@@ -1,0 +1,84 @@
+div.Cuadrado {
+width: 150px;
+height: 150px;
+background: red;
+border: 20px;
+border-style: solid;
+border-color: blue;
+}
+
+div.Rectangulo {
+   position: relative;
+   top: 10px;
+   left: -50px;
+   width: 100px;
+   height: 200px;
+   background: rgb(255, 79, 226);
+}
+
+div.Circulo {
+border-radius:50%;
+width: 100px;
+height: 100px;
+background: #41495e;
+}
+
+div.Ovalo {
+border-radius:50%;
+width: 200px;
+height: 100px;
+background: rgb(203, 157, 98);
+}
+
+div.Triangulo {
+width: 0;
+border-left: 200px solid #666278;
+border-right: 200px solid #6d6544;
+border-bottom: 200px solid transparent;
+}
+
+div.Triangulo_inv {
+width: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-top: 100px solid #08B;
+}
+
+div.Triangulo_rectangulo {
+width: 0px;
+border-right: 100px solid transparent;
+border-bottom: 100px solid #08BBBB;
+}
+
+div.Triangulo_rectangulo2 {
+width: 0px;
+border-left: 100px solid transparent;
+border-bottom: 100px solid #189a3d;
+}
+
+div.Trapecio {
+width: 500px;
+border-left: 50px solid #189a3d;
+border-right: 50px solid #189a3d;
+border-bottom: 100px solid #08B;
+}
+
+div#Pentagono {
+position: relative;
+width: 140px;
+border-width: 100px 30px 0 30px;
+border-style: solid;
+border-color: red transparent;
+}
+        
+div#Pentagono:before {
+content: "";
+position: absolute;
+height: 0;
+width: 0;
+top: -140px;
+left: -30px;
+border-width: 0 100px 40px;
+border-style: solid;
+border-color: transparent transparent red;
+}

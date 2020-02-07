@@ -1,0 +1,46 @@
+div#contenido { width: 1000px;
+
+ }
+div.principal {
+ background: navy;
+ color: white; 
+ border: 50px;
+ /* border-top-color: #CC0000;
+  border-right-color: red;
+  border-bottom-color: #00FF00;
+  border-left-color: #CCC;*/
+  border-color: red;
+  border-style: solid;
+/*  border-top-style: groove;
+  border-right-style: outset;
+  border-bottom-style: inset;
+  border-left-style: solid;
+*/
+ }
+div.normal    {
+  border: 20px;
+  border-top-color: #CC0000;
+  border-right-color: blue;
+  border-bottom-color: #00FF00;
+  border-left-color: #CCA;
+  border-top-style: groove;
+  border-right-style: outset;
+  border-bottom-style: inset;
+  border-left-style: solid;
+
+}
+div.pequenio  {
+  border: 2em ;
+  border-top-color: #CC0233;
+  border-right-color: green;
+  border-bottom-color: #00AF00;
+  border-left-color: #CFF;
+  border-top-style: dashed;
+  border-right-style: double;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+
+}
+
+
+

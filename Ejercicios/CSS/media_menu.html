@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.elem {
+    border: solid #6AC5AC 6px;
+    /*HSL stands for hue, saturation, and lightness(tonalidad, saturación y luminosidad)*/
+    background: HSLA(170, 25%, 76%, 1.00);
+    position: relative;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.elem-blue {
+    border: solid blue 4px;
+    background: HSLA(192, 59%, 68%, 0.30);
+}
+.elem-orange {
+    border: solid orange 4px;
+    background: HSLA(51, 85%, 67%, 0.30);
+}
+.elem-red {
+    border: solid red 4px;
+    background: HSLA(0, 96%, 27%, 0.30);
+}
+footer {
+    border: solid purple 4px;
+    background: HSLA(259, 75%, 53%, 0.30);
+}
+.ipsum {
+    color: #734161;
+}
+.three-columns {
+  padding: 1em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 1em;
+}
+div {
+    display: block;
+}
+@media screen and (min-width:600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  section {
+    margin-left: 25%;
+  }
+  footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container elem">
+  <nav class="elem elem-blue">
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About us</a>
+      </li>
+      <li>
+        <a href="#">Proyects</a>
+      </li>
+      <li>
+        <a href="#">Gallery</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="elem elem-orange">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+    </p>
+  </section>
+    <section class="elem elem-red ipsum three-columns">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+  </section>
+
+  <section class="elem elem-orange ipsum">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+  </section>
+  <footer>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

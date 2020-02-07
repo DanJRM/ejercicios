@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+  font-size: 4em;
+  color: #337ab7;
+}
+
+span.image{
+  font-size: 10em;
+  color: #41495e;
+  margin: 60px;
+  padding: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #41495e;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #12a5c7;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.three-columns {
+  padding: 1em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 1em;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#" class="active"><i class="fa fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-user-circle"></i> About</a>
+  <a href="#"><i class="fa fa-file"></i> News</a>
+  <a href="#"><i class="fa fa-briefcase"></i> Services</a>
+  <a href="#"><i class="fa fa-envelope"></i> Contact</a>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>My amazing Page</h2>
+  <span class="image"><i class="fa fa-user"></i></span> <span id="saludo" onclick="myFunction()">Buenos días </span> <span id="text"></span>
+  <p class="three-columns">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ligula lobortis, vulputate ligula vitae, aliquam tellus. Suspendisse maximus cursus velit non congue. Nulla nunc diam, bibendum eget nisl eu, porttitor ultrices mauris. Praesent facilisis scelerisque lorem eget vestibulum. In vel lacinia metus. Nulla facilisi. Duis consequat ligula diam, sed pellentesque mauris tincidunt ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam convallis finibus ante, nec tristique odio. Pellentesque ante ex, aliquet id laoreet a, iaculis id ex. Suspendisse vulputate non diam vel ullamcorper.
+    Maecenas suscipit ullamcorper mi. Sed eget dui odio. Praesent eros mi, suscipit id elementum et, egestas nec sem. Ut volutpat turpis vitae tincidunt hendrerit. Nullam tincidunt tellus at posuere vulputate. Vestibulum libero ex, facilisis sit amet condimentum ut, cursus eu lorem. Cras velit odio, vehicula eu mauris vitae, faucibus elementum justo. Curabitur vulputate justo elit, vel sodales nunc scelerisque non. Integer ut augue mauris. Phasellus ipsum dui, mollis quis leo placerat, tristique pharetra eros. Suspendisse sit amet semper erat, hendrerit congue risus. Nam sed efficitur velit, nec pharetra ligula. Nunc pulvinar ante pulvinar tellus mattis, ac dignissim erat lacinia. Nam ut hendrerit tortor. Duis ac tellus urna
+    Suspendisse fermentum tortor et fringilla suscipit. Nunc sed varius ante, sed ultrices erat. Donec ipsum ex, tempus semper lobortis eu, blandit id leo. Maecenas ac pulvinar eros. Vivamus suscipit arcu vitae enim suscipit, at scelerisque lorem accumsan. Aenean vel condimentum arcu. Vestibulum eleifend sit amet leo porttitor luctus. Sed non feugiat sapien. Nullam vulputate, purus non viverra sollicitudin, libero arcu volutpat dui, sit amet facilisis justo erat et elit. Proin quis rutrum ex. Fusce lobortis nulla eros, vulputate molestie tortor malesuada vitae. Aliquam congue magna sed nisl cursus, sit amet posuere orci tristique. Aliquam efficitur orci vel magna eleifend, non placerat mauris lacinia. Sed quis elit ut nibh eleifend mollis.</p>
+</div>
+
+<script>
+
+/*Texto*/
+var myObject = {
+    firstName:"Fernando",
+    lastName: "Mora",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+txt = myObject.fullName();
+document.getElementById("text").innerHTML = txt;
+
+/*Click*/
+function myFunction() {
+    document.getElementById("saludo").innerHTML = "Buenas noches ";
+    document.getElementById('saludo').style.color = 'red'
+}
+
+/*Color*/
+document.getElementById("saludo").style.color = "#3d8278";
+document.getElementById("saludo").style.fontSize= "50px";
+
+
+/*Menu*/
+function myFunction2() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+  p {color: red;}
+  p.text1 {display: none;}
+  p.text2 {display: inline;}
+  p.text3 {display: block;}
+  p.text4 {display: inline-block;}
+
+.flex-container {
+
+  display: flex;
+
+  /*Flex Directions*/
+  /*flex-direction: row-reverse;*/
+  /*flex-direction: row;*/
+  /*flex-direction: column-reverse;*/
+  /*flex-direction: column;*/
+
+  /*Wrap*/
+  /*flex-wrap: wrap-reverse;*/
+  /*flex-wrap: wrap;*/
+  flex-flow: row wrap;
+
+  /*Justify Content*/
+  /*justify-content: center;*/
+  /*justify-content: flex-start;*/
+  /*justify-content: flex-end;*/
+  /*justify-content: space-around;*/
+  justify-content: space-between;
+
+  /*Align*/
+  height: 200px;
+  /*align-items: center;*/
+  /*align-items: flex-start;*/
+  align-items: flex-end;
+  /*align-items: stretch;*/
+  /*align-items: baseline;*/
+
+  background-color: #e9ecf5;
+}
+
+.flex-container > div {
+  background-color: rgba(72, 86, 135, 0.8);
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div>Elem 1</div>
+  <div>Elem 2</div>
+  <div>Elem 3</div>
+  <div>Elem 4</div>
+  <div>Elem 5</div>
+  <div>Elem 6</div>
+  <div>Elem 7</div>
+  <div>Elem 8</div>
+  <div>Elem 9</div>
+  <div>Elem 10</div>
+
+</div>
+<div>
+<p class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+INLINE!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+
+</body>
+</html>

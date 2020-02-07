@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container2{
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgba(230, 230, 230, 0.7);
+  /*grid-template-columns: repeat(4, 25%);*/
+  /*grid-template-columns: 10% 35% 20% 35%;*/
+  grid-template-rows: 100px 300px 200px 100px 200px 200px 100px 500px;
+  grid-template-areas:
+    "head head head head"
+    "slide slide slide slide"
+    "side main main main"
+    "side . main2 main3"
+    "side . main2 main3"
+    "side . main2 main3"
+    ". hola hola ."
+    "footer footer footer footer";
+/*    grid-template-areas:
+    "head head  .    side"
+    "main main main  side"
+    ". footer footer side";*/
+}
+
+.item-1 {
+    grid-area: head;
+    /*HSL stands for hue, saturation, and lightness(tonalidad, saturación y luminosidad)*/
+    background: HSLA(162, 76%, 32%, 1.00);
+}
+.item-2 {
+    grid-area: slide;
+    background: HSLA(40, 96%, 12%, 0.7);
+}
+.item-3 {
+    grid-area: main;
+    background: HSLA(162, 76%, 32%, 0.7 );
+}
+.item-4 {
+    grid-area: side;
+    background: HSLA(162, 76%, 32%, 0.4);
+}
+.item-5 {
+    grid-area: footer;
+    background: #0A3442;
+}
+
+.item-6 {
+    grid-area: main2;
+    background: HSLA(24, 20%, 10%, 0.4);
+}
+
+.item-7 {
+    grid-area: main3;
+    background: HSLA(24, 20%, 10%, 0.4);
+}
+
+.item-8 {
+    grid-area: hola;
+    background: HSLA(244, 50%, 70%, 0.6);
+}
+.item {
+    border-radius: 3px;
+    margin: 2px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-wrap grid3 container2">
+  <div class="item item-1">HEAD</div>
+  <div class="item item-2">SLIDE</div>
+  <div class="item item-3">MAIN</div>
+  <div class="item item-6">MAIN 2</div>
+  <div class="item item-7">MAIN 3</div>
+  <div class="item item-8">Hola</div>
+  <div class="item item-4">SIDE</div>
+  <div class="item item-5">FOOTER</div>
+</div>
+
+
+</body>
+</html>

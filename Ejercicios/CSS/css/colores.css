@@ -1,0 +1,9 @@
+body {background: yellow }
+h1 { color: blue }
+h2, h3 { color: fuchsia }
+
+
+div#contenido { background: white; }
+/*div.principal { background: navy; color: white; }*/
+div.normal    { background: purple; color: white;}
+div.especial  { background: aqua ;color: black;}

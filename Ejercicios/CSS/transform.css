@@ -1,0 +1,58 @@
+.container {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.wrap {
+  width: 150px;
+  height: 150px;
+  border: 2px solid grey;
+  display: inline-block;
+  margin: 100px;
+}
+
+.element {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  color: white;
+  text-align: center;
+  line-height: 150px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.element-1 {
+  background-color: #009966;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+ /*-ms-transform: skew(20deg, 10deg);
+    -webkit-transform: skew(20deg, 10deg); 
+    transform: skew(30deg, 30deg);*/
+        -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); 
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); 
+    transform: matrix(2, -0.3, 2, 1, 0, 0);
+}
+
+.element-2 {
+  background-color: purple;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.element-3 {
+  background-color: #0099ee;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.element-4 {
+  background-color: orange;
+  -webkit-transform-origin: 500px;
+  -ms-transform-origin: 500px;
+  transform-origin: 500px;
+}

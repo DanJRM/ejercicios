@@ -1,0 +1,4 @@
+div#contenido { width: 100%; }
+div.principal { width: 200%; }
+div.normal    { width: 50%;}
+div.pequenio  { width: 30%;}
